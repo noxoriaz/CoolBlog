@@ -1,0 +1,9 @@
+﻿@using EPiServer.Core
+@using CoolBlog.Helpers
+
+<div class="navigation">
+    <ul>
+        <li class="@(Model.CurrentPage.ContentLink.CompareToIgnoreWorkID(ContentReference.StartPage)) ? "active" : null"></li>
+        @Html.MenuList(ContentReference.StartPage, @<li class="@(item.Selected ? "active" : null)">@Html.PageLink(item.Page)</li>)
+    </ul>
+</div>
