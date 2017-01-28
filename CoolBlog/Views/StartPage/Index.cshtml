@@ -1,0 +1,13 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc
+@using CoolBlog.Models.ViewModels
+
+@model DefaultPageViewModel<CoolBlog.Models.Pages.StartPage>
+
+<h1 @Html.EditAttributes(m => m.CurrentPage.Heading)>
+    @(Model.CurrentPage.Heading ?? Model.CurrentPage.PageName)
+</h1>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>
+@Html.PropertyFor(m => m.CurrentPage.MainContentArea)
