@@ -21,9 +21,9 @@ function getFolders(dir) {
 }
 
 const paths = [
-    process.env.INIT_CWD + '\\ViewModels\\home',
-    process.env.INIT_CWD + '\\ViewModels\\home\\components',
-    process.env.INIT_CWD + '\\ViewModels\\common\\components'
+    process.env.INIT_CWD + '\\Models\\ViewModels\\home',
+    process.env.INIT_CWD + '\\Models\\ViewModels\\home\\components',
+    process.env.INIT_CWD + '\\Models\\ViewModels\\common\\components'
 ];
 
 function watchFolder(input, output) {
@@ -75,7 +75,8 @@ function compileJS(input, output) {
     .pipe(gulp.dest(output));
 }
 
-const scriptsPath = 'ViewModels';
+const scriptsPath = 'Models/ViewModels';
+// const scriptsPath = path.join(['Models', 'ViewModels']);
 
 gulp.task('build', function () {
     var folders = getFolders(scriptsPath);

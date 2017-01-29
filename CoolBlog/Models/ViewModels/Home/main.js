@@ -5,5 +5,3 @@ const v = new Vue({
         message: 'Hello Vue.js!'
     }
 });
-
-console.log(v);
