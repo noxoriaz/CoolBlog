@@ -212,3 +212,6 @@ FakesAssemblies/
 /src/AlloyDemoKit/modules/Embed.aspx
 /src/AlloyDemoKit/modules/_protected/PowerBI
 /src/AlloyDemoKit/modules/_protected/Peerius
+
+# Vue.js front-end bundle files
+Static/App

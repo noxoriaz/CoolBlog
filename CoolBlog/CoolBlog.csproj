@@ -257,6 +257,8 @@
     <Folder Include="Static\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="gulpfile.js" />
+    <Content Include="ViewModels\Home\main.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -273,6 +275,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Navigation.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
