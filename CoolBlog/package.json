@@ -1,0 +1,10 @@
+{
+  "name": "coolblog",
+  "version": "0.0.1",
+  "description": "EPiServer CMS Blog using Vue.js",
+  "author": "Lauri Annala",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.1.10"
+  }
+}
